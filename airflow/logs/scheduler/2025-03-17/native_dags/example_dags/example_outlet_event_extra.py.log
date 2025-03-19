@@ -1,0 +1,21 @@
+[2025-03-17T15:35:23.459-0500] {processor.py:186} INFO - Started process (PID=15023) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2025-03-17T15:35:23.460-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py for tasks to queue
+[2025-03-17T15:35:23.463-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.463-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2025-03-17T15:35:23.482-0500] {processor.py:925} INFO - DAG(s) 'dataset_with_extra_from_classic_operator', 'dataset_with_extra_by_yield', 'dataset_with_extra_by_context' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py
+[2025-03-17T15:35:23.625-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.623-0500] {override.py:1858} INFO - Created Permission View: can delete on DAG:dataset_with_extra_from_classic_operator
+[2025-03-17T15:35:23.642-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.641-0500] {override.py:1858} INFO - Created Permission View: can read on DAG:dataset_with_extra_from_classic_operator
+[2025-03-17T15:35:23.653-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.653-0500] {override.py:1858} INFO - Created Permission View: can edit on DAG:dataset_with_extra_from_classic_operator
+[2025-03-17T15:35:23.679-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.679-0500] {override.py:1858} INFO - Created Permission View: can delete on DAG:dataset_with_extra_by_yield
+[2025-03-17T15:35:23.690-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.689-0500] {override.py:1858} INFO - Created Permission View: can read on DAG:dataset_with_extra_by_yield
+[2025-03-17T15:35:23.702-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.701-0500] {override.py:1858} INFO - Created Permission View: can edit on DAG:dataset_with_extra_by_yield
+[2025-03-17T15:35:23.724-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.724-0500] {override.py:1858} INFO - Created Permission View: can delete on DAG:dataset_with_extra_by_context
+[2025-03-17T15:35:23.736-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.735-0500] {override.py:1858} INFO - Created Permission View: can read on DAG:dataset_with_extra_by_context
+[2025-03-17T15:35:23.748-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.747-0500] {override.py:1858} INFO - Created Permission View: can edit on DAG:dataset_with_extra_by_context
+[2025-03-17T15:35:23.748-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.748-0500] {dag.py:3211} INFO - Sync 3 DAGs
+[2025-03-17T15:35:23.764-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.763-0500] {dag.py:3234} INFO - Creating ORM DAG for dataset_with_extra_from_classic_operator
+[2025-03-17T15:35:23.764-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.764-0500] {dag.py:3234} INFO - Creating ORM DAG for dataset_with_extra_by_context
+[2025-03-17T15:35:23.765-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.765-0500] {dag.py:3234} INFO - Creating ORM DAG for dataset_with_extra_by_yield
+[2025-03-17T15:35:23.790-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.789-0500] {dag.py:4138} INFO - Setting next_dagrun for dataset_with_extra_by_context to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T15:35:23.792-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.792-0500] {dag.py:4138} INFO - Setting next_dagrun for dataset_with_extra_by_yield to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T15:35:23.793-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:23.793-0500] {dag.py:4138} INFO - Setting next_dagrun for dataset_with_extra_from_classic_operator to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T15:35:23.828-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py took 0.376 seconds

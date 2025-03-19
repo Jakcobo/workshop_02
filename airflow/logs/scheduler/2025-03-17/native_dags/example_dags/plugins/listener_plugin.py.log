@@ -1,0 +1,10 @@
+[2025-03-17T15:34:54.073-0500] {processor.py:186} INFO - Started process (PID=14915) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2025-03-17T15:34:54.074-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2025-03-17T15:34:54.077-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:54.076-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2025-03-17T15:34:54.080-0500] {processor.py:927} WARNING - No viable dags retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2025-03-17T15:34:54.091-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.023 seconds
+[2025-03-17T15:35:55.489-0500] {processor.py:186} INFO - Started process (PID=15213) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2025-03-17T15:35:55.490-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2025-03-17T15:35:55.492-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:55.492-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2025-03-17T15:35:55.494-0500] {processor.py:927} WARNING - No viable dags retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2025-03-17T15:35:55.506-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.023 seconds

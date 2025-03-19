@@ -1,0 +1,18 @@
+[2025-03-17T15:34:42.883-0500] {processor.py:186} INFO - Started process (PID=14871) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-03-17T15:34:42.884-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-03-17T15:34:42.887-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:42.886-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-03-17T15:34:42.895-0500] {processor.py:925} INFO - DAG(s) 'example_skip_dag' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-03-17T15:34:43.008-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:43.008-0500] {override.py:1858} INFO - Created Permission View: can delete on DAG:example_skip_dag
+[2025-03-17T15:34:43.024-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:43.024-0500] {override.py:1858} INFO - Created Permission View: can read on DAG:example_skip_dag
+[2025-03-17T15:34:43.034-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:43.034-0500] {override.py:1858} INFO - Created Permission View: can edit on DAG:example_skip_dag
+[2025-03-17T15:34:43.034-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:43.034-0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-03-17T15:34:43.047-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:43.047-0500] {dag.py:3234} INFO - Creating ORM DAG for example_skip_dag
+[2025-03-17T15:34:43.056-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:43.056-0500] {dag.py:4138} INFO - Setting next_dagrun for example_skip_dag to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T15:34:43.079-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py took 0.202 seconds
+[2025-03-17T15:35:44.998-0500] {processor.py:186} INFO - Started process (PID=15172) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-03-17T15:35:45.000-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-03-17T15:35:45.002-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:45.002-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-03-17T15:35:45.012-0500] {processor.py:925} INFO - DAG(s) 'example_skip_dag' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-03-17T15:35:45.033-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:45.033-0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-03-17T15:35:45.057-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:45.057-0500] {dag.py:4138} INFO - Setting next_dagrun for example_skip_dag to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T15:35:45.082-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py took 0.090 seconds

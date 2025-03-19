@@ -1,0 +1,18 @@
+[2025-03-17T15:34:37.537-0500] {processor.py:186} INFO - Started process (PID=14846) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2025-03-17T15:34:37.538-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-03-17T15:34:37.541-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:37.541-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2025-03-17T15:34:37.567-0500] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2025-03-17T15:34:37.753-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:37.752-0500] {override.py:1858} INFO - Created Permission View: can delete on DAG:example_sensors
+[2025-03-17T15:34:37.769-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:37.768-0500] {override.py:1858} INFO - Created Permission View: can read on DAG:example_sensors
+[2025-03-17T15:34:37.780-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:37.780-0500] {override.py:1858} INFO - Created Permission View: can edit on DAG:example_sensors
+[2025-03-17T15:34:37.781-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:37.781-0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-03-17T15:34:37.795-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:37.794-0500] {dag.py:3234} INFO - Creating ORM DAG for example_sensors
+[2025-03-17T15:34:37.795-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:37.795-0500] {dag.py:4138} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-03-17T15:34:37.825-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py took 0.298 seconds
+[2025-03-17T15:35:39.377-0500] {processor.py:186} INFO - Started process (PID=15149) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2025-03-17T15:35:39.379-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-03-17T15:35:39.382-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:39.382-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2025-03-17T15:35:39.395-0500] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2025-03-17T15:35:39.421-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:39.420-0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-03-17T15:35:39.435-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:39.435-0500] {dag.py:4138} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-03-17T15:35:39.458-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py took 0.088 seconds

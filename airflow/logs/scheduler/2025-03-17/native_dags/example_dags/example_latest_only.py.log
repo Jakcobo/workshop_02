@@ -1,0 +1,11 @@
+[2025-03-17T15:35:18.484-0500] {processor.py:186} INFO - Started process (PID=15007) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py
+[2025-03-17T15:35:18.485-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2025-03-17T15:35:18.488-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:18.488-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py
+[2025-03-17T15:35:18.496-0500] {processor.py:925} INFO - DAG(s) 'latest_only' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py
+[2025-03-17T15:35:18.614-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:18.613-0500] {override.py:1858} INFO - Created Permission View: can delete on DAG:latest_only
+[2025-03-17T15:35:18.627-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:18.627-0500] {override.py:1858} INFO - Created Permission View: can read on DAG:latest_only
+[2025-03-17T15:35:18.638-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:18.637-0500] {override.py:1858} INFO - Created Permission View: can edit on DAG:latest_only
+[2025-03-17T15:35:18.638-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:18.638-0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-03-17T15:35:18.655-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:18.655-0500] {dag.py:3234} INFO - Creating ORM DAG for latest_only
+[2025-03-17T15:35:18.665-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:18.664-0500] {dag.py:4138} INFO - Setting next_dagrun for latest_only to 2025-03-17 16:00:00+00:00, run_after=2025-03-17 20:00:00+00:00
+[2025-03-17T15:35:18.693-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only.py took 0.215 seconds

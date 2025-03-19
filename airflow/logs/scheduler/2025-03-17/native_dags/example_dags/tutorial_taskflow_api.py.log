@@ -1,0 +1,18 @@
+[2025-03-17T15:34:33.457-0500] {processor.py:186} INFO - Started process (PID=14769) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-03-17T15:34:33.458-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2025-03-17T15:34:33.461-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:33.461-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-03-17T15:34:33.471-0500] {processor.py:925} INFO - DAG(s) 'tutorial_taskflow_api' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-03-17T15:34:33.605-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:33.604-0500] {override.py:1858} INFO - Created Permission View: can delete on DAG:tutorial_taskflow_api
+[2025-03-17T15:34:33.618-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:33.618-0500] {override.py:1858} INFO - Created Permission View: can read on DAG:tutorial_taskflow_api
+[2025-03-17T15:34:33.630-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:33.629-0500] {override.py:1858} INFO - Created Permission View: can edit on DAG:tutorial_taskflow_api
+[2025-03-17T15:34:33.630-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:33.630-0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-03-17T15:34:33.648-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:33.647-0500] {dag.py:3234} INFO - Creating ORM DAG for tutorial_taskflow_api
+[2025-03-17T15:34:33.649-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:33.649-0500] {dag.py:4138} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2025-03-17T15:34:33.673-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.223 seconds
+[2025-03-17T15:35:36.338-0500] {processor.py:186} INFO - Started process (PID=15134) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-03-17T15:35:36.340-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2025-03-17T15:35:36.344-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:36.343-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-03-17T15:35:36.355-0500] {processor.py:925} INFO - DAG(s) 'tutorial_taskflow_api' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-03-17T15:35:36.381-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:36.380-0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-03-17T15:35:36.398-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:36.397-0500] {dag.py:4138} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2025-03-17T15:35:36.428-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.097 seconds

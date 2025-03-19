@@ -1,0 +1,11 @@
+[2025-03-17T15:35:26.800-0500] {processor.py:186} INFO - Started process (PID=15101) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2025-03-17T15:35:26.801-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2025-03-17T15:35:26.804-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:26.803-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2025-03-17T15:35:26.815-0500] {processor.py:925} INFO - DAG(s) 'example_passing_params_via_test_command' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2025-03-17T15:35:26.950-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:26.949-0500] {override.py:1858} INFO - Created Permission View: can delete on DAG:example_passing_params_via_test_command
+[2025-03-17T15:35:26.965-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:26.965-0500] {override.py:1858} INFO - Created Permission View: can read on DAG:example_passing_params_via_test_command
+[2025-03-17T15:35:26.976-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:26.975-0500] {override.py:1858} INFO - Created Permission View: can edit on DAG:example_passing_params_via_test_command
+[2025-03-17T15:35:26.976-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:26.976-0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-03-17T15:35:26.990-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:26.990-0500] {dag.py:3234} INFO - Creating ORM DAG for example_passing_params_via_test_command
+[2025-03-17T15:35:27.005-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:27.004-0500] {dag.py:4138} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2025-03-17 20:34:00+00:00, run_after=2025-03-17 20:35:00+00:00
+[2025-03-17T15:35:27.025-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.231 seconds

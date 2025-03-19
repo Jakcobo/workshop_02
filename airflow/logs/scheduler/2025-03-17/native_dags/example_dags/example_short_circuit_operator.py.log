@@ -1,0 +1,18 @@
+[2025-03-17T15:34:34.822-0500] {processor.py:186} INFO - Started process (PID=14801) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-03-17T15:34:34.823-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py for tasks to queue
+[2025-03-17T15:34:34.825-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:34.824-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-03-17T15:34:34.834-0500] {processor.py:925} INFO - DAG(s) 'example_short_circuit_operator' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-03-17T15:34:34.949-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:34.948-0500] {override.py:1858} INFO - Created Permission View: can delete on DAG:example_short_circuit_operator
+[2025-03-17T15:34:34.962-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:34.962-0500] {override.py:1858} INFO - Created Permission View: can read on DAG:example_short_circuit_operator
+[2025-03-17T15:34:34.972-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:34.972-0500] {override.py:1858} INFO - Created Permission View: can edit on DAG:example_short_circuit_operator
+[2025-03-17T15:34:34.973-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:34.973-0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-03-17T15:34:34.987-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:34.987-0500] {dag.py:3234} INFO - Creating ORM DAG for example_short_circuit_operator
+[2025-03-17T15:34:34.998-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:34:34.997-0500] {dag.py:4138} INFO - Setting next_dagrun for example_short_circuit_operator to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T15:34:35.021-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py took 0.205 seconds
+[2025-03-17T15:35:37.322-0500] {processor.py:186} INFO - Started process (PID=15141) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-03-17T15:35:37.326-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py for tasks to queue
+[2025-03-17T15:35:37.330-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:37.330-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-03-17T15:35:37.344-0500] {processor.py:925} INFO - DAG(s) 'example_short_circuit_operator' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-03-17T15:35:37.373-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:37.373-0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-03-17T15:35:37.396-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:37.396-0500] {dag.py:4138} INFO - Setting next_dagrun for example_short_circuit_operator to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T15:35:37.422-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py took 0.107 seconds

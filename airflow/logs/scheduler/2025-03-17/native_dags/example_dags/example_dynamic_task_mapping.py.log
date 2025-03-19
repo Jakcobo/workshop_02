@@ -1,0 +1,18 @@
+[2025-03-17T15:35:02.440-0500] {processor.py:186} INFO - Started process (PID=14946) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2025-03-17T15:35:02.441-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2025-03-17T15:35:02.443-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:02.442-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2025-03-17T15:35:02.455-0500] {processor.py:925} INFO - DAG(s) 'example_dynamic_task_mapping' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2025-03-17T15:35:02.569-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:02.568-0500] {override.py:1858} INFO - Created Permission View: can delete on DAG:example_dynamic_task_mapping
+[2025-03-17T15:35:02.581-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:02.581-0500] {override.py:1858} INFO - Created Permission View: can read on DAG:example_dynamic_task_mapping
+[2025-03-17T15:35:02.590-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:02.589-0500] {override.py:1858} INFO - Created Permission View: can edit on DAG:example_dynamic_task_mapping
+[2025-03-17T15:35:02.590-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:02.590-0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-03-17T15:35:02.604-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:02.603-0500] {dag.py:3234} INFO - Creating ORM DAG for example_dynamic_task_mapping
+[2025-03-17T15:35:02.612-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:02.612-0500] {dag.py:4138} INFO - Setting next_dagrun for example_dynamic_task_mapping to 2022-03-04 00:00:00+00:00, run_after=2022-03-05 00:00:00+00:00
+[2025-03-17T15:35:02.631-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.196 seconds
+[2025-03-17T15:36:03.223-0500] {processor.py:186} INFO - Started process (PID=15239) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2025-03-17T15:36:03.226-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2025-03-17T15:36:03.229-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:36:03.228-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2025-03-17T15:36:03.239-0500] {processor.py:925} INFO - DAG(s) 'example_dynamic_task_mapping' retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2025-03-17T15:36:03.257-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:36:03.256-0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-03-17T15:36:03.277-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:36:03.277-0500] {dag.py:4138} INFO - Setting next_dagrun for example_dynamic_task_mapping to 2022-03-04 00:00:00+00:00, run_after=2022-03-05 00:00:00+00:00
+[2025-03-17T15:36:03.299-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.082 seconds

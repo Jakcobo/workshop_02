@@ -1,0 +1,5 @@
+[2025-03-17T15:35:24.215-0500] {processor.py:186} INFO - Started process (PID=15056) to work on /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2025-03-17T15:35:24.215-0500] {processor.py:914} INFO - Processing file /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2025-03-17T15:35:24.218-0500] {logging_mixin.py:190} INFO - [2025-03-17T15:35:24.217-0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2025-03-17T15:35:24.292-0500] {processor.py:927} WARNING - No viable dags retrieved from /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2025-03-17T15:35:24.306-0500] {processor.py:208} INFO - Processing /home/jacobo/workshop_02/venv/lib/python3.12/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.097 seconds
