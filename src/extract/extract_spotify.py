@@ -1,7 +1,6 @@
-# src/extract/extract_spotify.py
-
 import os
 import pandas as pd
+import logging
 
 def extract_spotify_data():
     """
@@ -14,8 +13,8 @@ def extract_spotify_data():
     
     try:
         df = pd.read_csv(file_path)
-        print(f"Datos extraídos correctamente desde {file_path}.")
+        logging.info("Datos extraídos correctamente desde %s.", file_path)
         return df
     except Exception as e:
-        print(f"Error al extraer datos desde {file_path}: {e}")
+        logging.error("Error al extraer datos desde %s: %s", file_path, e)
         raise
