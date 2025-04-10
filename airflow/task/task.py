@@ -66,17 +66,23 @@ def extract_grammys_task(**kwargs):
     return json_data
 
 def transform_grammys_task(**kwargs):
-    """
-    Transforms the Grammys data by selecting only the required columns (category, nominee, winner, year)
-    and removing rows where nominee is null. It pulls the JSON output from extract_grammys_task via XCom,
-    rebuilds the DataFrame, applies the transformation, and returns the transformed DataFrame as JSON.
-    """
-
     ti = kwargs['ti']
     raw_data = ti.xcom_pull(task_ids='extract_grammys')
-    df = pd.DataFrame(raw_data)
-    transformed = transform_grammys_data(df)
-    return transformed.to_json(orient='records')
+    
+    try:
+        # Asegúrate de que raw_data es un JSON válido
+        if isinstance(raw_data, str):
+            raw_data = json.loads(raw_data)
+        
+        # Convertir a DataFrame
+        df = pd.DataFrame.from_records(raw_data)
+        
+        # Llamar a tu función de transformación
+        transformed = transform_grammys_data(df)
+        return transformed.to_json(orient='records')
+    except Exception as e:
+        logging.error(f"Error processing Grammys data: {str(e)}")
+        raise
 
 
 def extract_api_task(**kwargs):
