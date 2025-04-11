@@ -89,7 +89,7 @@ with DAG(
     )
 
     # Dependencias según la estructura deseada
-    task_db_init >> [task_extract_spotify, task_extract_grammys, task_extract_api]
+    ttask_db_init >> task_extract_grammys 
 
     task_extract_spotify >> task_transform_spotify
     task_extract_grammys >> task_transform_grammys
