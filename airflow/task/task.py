@@ -20,15 +20,17 @@ from src.extract.extract_api import extract_api_data
 from src.transform.transform_grammys import transform_grammys_data
 from src.transform.transform_spotify import transform_spotify_data 
 from src.load.merge import merge_datasets
+from src.load.drive import storing_merged_data
+
 
 def db_init_task(**kwargs):
     """
     Inicializa la base de datos.
-    Como esta tarea no produce un DataFrame, se retorna un diccionario vacío para mantener la consistencia con XCom.
     """
     init_db()
     logging.info("Base de datos inicializada correctamente.")
     return {} 
+
 
 def extract_spotify_task(**kwargs):
     """
@@ -36,18 +38,15 @@ def extract_spotify_task(**kwargs):
     """
     df = extract_spotify_data()
     logging.info("Datos extraídos de Spotify: %d filas.", len(df))
-    json_data = df.to_json(orient="records")
-    return json_data
+    return df.to_json(orient="records")
 
 
 def transform_spotify_task(**kwargs):
     """
-    Transforms the Spotify data by cleaning and remapping the track_genre column to a new genre_category.
-    It pulls the JSON output from the 'extract_spotify' task via XCom,
-    converts it into a DataFrame, applies transformation, and returns the result as JSON.
+    Transforma los datos de Spotify.
     """
     ti = kwargs['ti']
-    spotify_json = ti.xcom_pull(task_ids="extract_spotify")
+    spotify_json = ti.xcom_pull(task_ids="read_csv")
     if not spotify_json:
         logging.error("No Spotify data found in XCom.")
         return None
@@ -56,56 +55,72 @@ def transform_spotify_task(**kwargs):
         logging.info("Spotify data transformed successfully.")
     return transformed_json
 
+
 def extract_grammys_task(**kwargs):
     """
-    Extrae los datos de la tabla 'grammys' desde la base de datos y retorna el DataFrame serializado en JSON.
+    Extrae los datos de la tabla 'grammys' y retorna como JSON.
     """
     df = extract_grammys_data()
     logging.info("Datos extraídos de la tabla 'grammys': %d filas.", len(df))
-    json_data = df.to_json(orient="records")
-    return json_data
+    return df.to_json(orient="records")
+
 
 def transform_grammys_task(**kwargs):
     ti = kwargs['ti']
-    raw_data = ti.xcom_pull(task_ids='extract_grammys')
-    
+    raw_data = ti.xcom_pull(task_ids='read_db')
+
+    if not raw_data:
+        logging.error("No se recibió data desde read_db (XCom es None o vacío).")
+        raise ValueError("Fallo en la extracción previa: raw_data está vacío o es None.")
+
     try:
-        # Asegúrate de que raw_data es un JSON válido
         if isinstance(raw_data, str):
             raw_data = json.loads(raw_data)
-        
-        # Convertir a DataFrame
+
         df = pd.DataFrame.from_records(raw_data)
-        
-        # Llamar a tu función de transformación
         transformed = transform_grammys_data(df)
         return transformed.to_json(orient='records')
+
     except Exception as e:
-        logging.error(f"Error processing Grammys data: {str(e)}")
+        logging.error(f"Error procesando los datos de los Grammy: {str(e)}", exc_info=True)
         raise
 
 
 def extract_api_task(**kwargs):
     """
-    Extracts the LastFM Artist Stats CSV and returns the DataFrame serialized as JSON.
+    Extrae los datos desde la API (CSV LastFM).
     """
     df = extract_api_data()
-    logging.info("Extracted LastFM Artist Stats data with %d rows.", len(df))
+    logging.info("Datos extraídos desde la API: %d filas.", len(df))
     return df.to_json(orient="records")
 
 
 def merge_datasets_task(**kwargs):
     ti = kwargs["ti"]
-    # Pull transformed outputs of each dataset from XCom.
-    spotify_json = ti.xcom_pull(task_ids="transform_spotify")
-    grammys_json = ti.xcom_pull(task_ids="transform_grammys")
-    api_json = ti.xcom_pull(task_ids="extract_api")
-    
+    spotify_json = ti.xcom_pull(task_ids="transform_csv")
+    grammys_json = ti.xcom_pull(task_ids="transform_db")
+    api_json = ti.xcom_pull(task_ids="extract")
+
     if not (spotify_json and grammys_json and api_json):
-        logging.error("Missing data from one or more source tasks for merging.")
+        logging.error("Faltan datos de uno o más tasks para el merge.")
         return None
-    
+
     merged_json = merge_datasets(spotify_json, grammys_json, api_json)
     if merged_json:
-        logging.info("Datasets merged successfully.")
+        logging.info("Merge completado exitosamente.")
     return merged_json
+
+
+def store_to_drive_task(**kwargs):
+    """
+    Sube el DataFrame final como CSV a Google Drive.
+    """
+    ti = kwargs["ti"]
+    final_data_json = ti.xcom_pull(task_ids="merge")
+
+    if not final_data_json:
+        logging.error("No se recibió data desde merge (XCom vacío).")
+        raise ValueError("No data received from merge task.")
+    
+    df = pd.read_json(final_data_json, orient="records")
+    storing_merged_data("merged_dataset.csv", df)

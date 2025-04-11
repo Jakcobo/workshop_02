@@ -4,10 +4,4 @@ inicio.sh/
 airflow/airflow.db
 airflow/logs 
 
-airflow/logs 
-
-airflow/airflow.cfg
-airflow/standalone_admin_password.txt
-airflow/standalone_admin_password.txt 
-
-airflow/airflow.cfg 
+airflow/airflow.cfg  
